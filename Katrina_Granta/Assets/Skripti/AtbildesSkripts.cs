@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class AtbildesSkripts : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool AtbildePareiza = false;
+    public SpelesParvaldnieks spelesParvaldnieks;
 
-    // Update is called once per frame
-    void Update()
+    public void Atbilde()
     {
-        
+        if (AtbildePareiza)
+        {
+            Debug.Log("Jautājums atbildēts pareizi!");
+            spelesParvaldnieks.pareizi();
+        }
+        else
+        {
+            Debug.Log("Jautājums atbildēts nepareizi");
+            spelesParvaldnieks.nepareizi();
+        }
     }
 }
