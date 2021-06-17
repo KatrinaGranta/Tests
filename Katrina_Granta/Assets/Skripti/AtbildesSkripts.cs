@@ -6,18 +6,20 @@ public class AtbildesSkripts : MonoBehaviour
 {
     public bool AtbildePareiza = false;
     public SpelesParvaldnieks spelesParvaldnieks;
-
-    public void Atbilde()
+    public void Atbildes()
     {
         if (AtbildePareiza)
         {
-            Debug.Log("Jautājums atbildēts pareizi!");
+            Debug.Log("Pareiza Atbilde");
             spelesParvaldnieks.pareizi();
         }
         else
         {
-            Debug.Log("Jautājums atbildēts nepareizi");
+            Debug.Log("Nepareiza Atbilde");
             spelesParvaldnieks.nepareizi();
+
         }
     }
+
+
 }

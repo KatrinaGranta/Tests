@@ -45,7 +45,7 @@ public class SpelesParvaldnieks : MonoBehaviour
         jautajumi.RemoveAt(pasreizejaisJautajums);
         generetJautajumu();
     }
-    void Atbilde()
+    void Atbildes()
     {
         for(int i = 0; i< izvele.Length; i++)
         {
@@ -64,7 +64,7 @@ public class SpelesParvaldnieks : MonoBehaviour
         {
             pasreizejaisJautajums = Random.Range(0, jautajumi.Count);
             jautajumuTeksts.text = jautajumi[pasreizejaisJautajums].Jautajums;
-            Atbilde();
+            Atbildes();
         }
         else
         {

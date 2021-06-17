@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 158648445}
   - component: {fileID: 158648444}
   - component: {fileID: 158648443}
+  - component: {fileID: 158648446}
   m_Layer: 5
   m_Name: Poga3
   m_TagString: Untagged
@@ -288,6 +289,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 158648446}
+        m_MethodName: Atbildes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &158648444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +337,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158648441}
   m_CullTransparentMesh: 0
+--- !u!114 &158648446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158648441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9e3c955dde3794e8f57fea92ecc4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AtbildePareiza: 0
+  spelesParvaldnieks: {fileID: 479463015}
 --- !u!1 &179979101
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +363,7 @@ GameObject:
   - component: {fileID: 179979105}
   - component: {fileID: 179979104}
   - component: {fileID: 179979103}
+  - component: {fileID: 179979106}
   m_Layer: 5
   m_Name: Poga2
   m_TagString: Untagged
@@ -418,6 +445,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 179979106}
+        m_MethodName: Atbildes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &179979104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,6 +493,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179979101}
   m_CullTransparentMesh: 0
+--- !u!114 &179979106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179979101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9e3c955dde3794e8f57fea92ecc4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AtbildePareiza: 0
+  spelesParvaldnieks: {fileID: 479463015}
 --- !u!1 &274815402
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,17 +533,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274815402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 548634262}
-  m_Father: {fileID: 526161651}
-  m_RootOrder: 1
+  m_Father: {fileID: 1888249256}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2201e-10, y: -124}
+  m_AnchoredPosition: {x: -0.000061034734, y: -123.999756}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274815404
@@ -686,11 +738,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb871a4b1ab0af342841bd1ea63bb60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jautajumi: []
-  izvele: []
+  jautajumi:
+  - Jautajums: "Cik sp\u0113\u013Cu objektu var b\u016Bt Unity dzin\u012B?"
+    atbildes:
+    - 6000
+    - 4000
+    - 5550
+    - 5000
+    PareizaAtbilde: 4
+  - Jautajums: "K\u0101da metode \u013Cauj iesp\u0113jot vai atsp\u0113jot sp\u0113les
+      objektu hirarhij\u0101?"
+    atbildes:
+    - SetActive metode
+    - 4
+    - 5
+    - 6
+    PareizaAtbilde: 1
+  - Jautajums: "K\u0101 pievienot skriptu sp\u0113les objektam?"
+    atbildes:
+    - 8
+    - 8
+    - "Skriptu vilkt tie\u0161u uz objektu"
+    - 8
+    PareizaAtbilde: 3
+  - Jautajums: "K\u0101 izveidot jaunu sp\u0113\u013Cu objektu?"
+    atbildes:
+    - 5
+    - 6
+    - "Labais peles klik\u0161\u0137is uz hirarhijas logu un izv\u0113l\u0113ties
+      \"create empty\""
+    - 7
+    PareizaAtbilde: 3
+  - Jautajums: "Sp\u0113les Objekt\u0101 b\u016Bs vismaz viena transform\u0101cijas
+      sast\u0101vda\u013Ca, kas nor\u0101d\u012Bs vi\u0146u atra\u0161an\u0101s vietu\u2026.."
+    atbildes:
+    - 1
+    - 12
+    - 3
+    - "Pagrie\u0161anos un m\u0113roga ainu"
+    PareizaAtbilde: 3
+  - Jautajums: Ko izpilda kods "public static GameObject.Find(string name);"?
+    atbildes:
+    - "Atrod sp\u0113les objektu p\u0113c t\u0101 v\u0101rda un atgrie\u017E to"
+    - "Izdz\u0113\u0161 sp\u0113les objektu"
+    - "Izveido jaunu sp\u0113les objektu"
+    - "Atrod sp\u0113les objektu un izdz\u0113\u0161 to"
+    PareizaAtbilde: 0
+  - Jautajums: "Ar k\u0101da koda pal\u012Bdz\u012Bbu ir viegl\u0101k atrast sp\u0113les
+      objekta \"b\u0113rnu\"?"
+    atbildes:
+    - 1
+    - GameObject.Find
+    - 2
+    - Transform.Find
+    PareizaAtbilde: 3
+  - Jautajums: "Ko p\u0101rst\u0101v sp\u0113les objekts?"
+    atbildes:
+    - "Rakstz\u012Bmes, rekviz\u012Btus un dekor\u0101cijas"
+    - ' audio objektus'
+    - 1
+    - 2
+    PareizaAtbilde: 0
+  - Jautajums: "Kas sp\u0113les objektu pal\u012Bdz at\u0161\u0137irt no citiem sp\u0113les
+      objektiem?"
+    atbildes:
+    - Nosaukums
+    - Tagi
+    - 2
+    - 3
+    PareizaAtbilde: 1
+  - Jautajums: "K\u0101da metode \u013Cauj ieg\u016Bt atsauci uz k\u0101du noteikta
+      veida sast\u0101vda\u013Cu, kas ir pie\u0161\u0137irta sp\u0113les objektam?"
+    atbildes:
+    - GetComponent metode
+    - 1
+    - 2
+    - 3
+    PareizaAtbilde: 0
+  izvele:
+  - {fileID: 1506019676}
+  - {fileID: 179979101}
+  - {fileID: 158648441}
+  - {fileID: 529498033}
   pasreizejaisJautajums: 0
   JautajumuLogs: {fileID: 1483897013}
-  RezultatuLogs: {fileID: 526161650}
+  RezultatuLogs: {fileID: 1888249255}
   jautajumuTeksts: {fileID: 1087160656}
   RezultatuTeksts: {fileID: 964972069}
   rezultats: 0
@@ -706,84 +838,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &526161650
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 526161651}
-  - component: {fileID: 526161653}
-  - component: {fileID: 526161652}
-  m_Layer: 5
-  m_Name: RezultatuLogs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &526161651
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526161650}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1888249256}
-  - {fileID: 274815403}
-  m_Father: {fileID: 1620415154}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.358, y: 0.00010681}
-  m_SizeDelta: {x: 314.96872, y: 296.5086}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &526161652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526161650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6841574, g: 0.14978641, b: 0.9622642, a: 0.65882355}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &526161653
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526161650}
-  m_CullTransparentMesh: 0
 --- !u!1 &529498033
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +852,7 @@ GameObject:
   - component: {fileID: 529498037}
   - component: {fileID: 529498036}
   - component: {fileID: 529498035}
+  - component: {fileID: 529498038}
   m_Layer: 5
   m_Name: Poga4
   m_TagString: Untagged
@@ -877,6 +934,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 529498038}
+        m_MethodName: Atbildes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &529498036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,6 +982,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529498033}
   m_CullTransparentMesh: 0
+--- !u!114 &529498038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529498033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9e3c955dde3794e8f57fea92ecc4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AtbildePareiza: 0
+  spelesParvaldnieks: {fileID: 479463015}
 --- !u!1 &548634261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1301,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1888249256}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1304,7 +1386,7 @@ GameObject:
   - component: {fileID: 1087160657}
   - component: {fileID: 1087160656}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Jautajumuteksts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1495,7 +1577,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394692825
 GameObject:
@@ -1622,7 +1704,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483897013
 GameObject:
@@ -1641,7 +1723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1483897014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1649,7 +1731,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483897013}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1658,12 +1740,12 @@ RectTransform:
   - {fileID: 179979102}
   - {fileID: 158648442}
   - {fileID: 529498034}
-  m_Father: {fileID: 1620415154}
-  m_RootOrder: 3
+  m_Father: {fileID: 1692830478}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.1, y: 96.04}
+  m_AnchoredPosition: {x: -1.1000004, y: 96.03994}
   m_SizeDelta: {x: 285.1404, y: 89.840515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483897015
@@ -1715,6 +1797,7 @@ GameObject:
   - component: {fileID: 1506019680}
   - component: {fileID: 1506019679}
   - component: {fileID: 1506019678}
+  - component: {fileID: 1506019681}
   m_Layer: 5
   m_Name: Poga1
   m_TagString: Untagged
@@ -1796,6 +1879,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1506019681}
+        m_MethodName: Atbildes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1506019679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,6 +1927,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506019676}
   m_CullTransparentMesh: 0
+--- !u!114 &1506019681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506019676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9e3c955dde3794e8f57fea92ecc4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AtbildePareiza: 0
+  spelesParvaldnieks: {fileID: 479463015}
 --- !u!1 &1522222364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,9 +2110,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 83584760}
-  - {fileID: 526161651}
+  - {fileID: 1888249256}
   - {fileID: 1692830478}
-  - {fileID: 1483897014}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2030,7 +2137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1692830478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2038,16 +2145,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692830477}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1483897014}
   m_Father: {fileID: 1620415154}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -0.000012219}
+  m_AnchoredPosition: {x: -7, y: 0.000015258789}
   m_SizeDelta: {x: 306.25293, y: 296.50876}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692830479
@@ -2112,17 +2220,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888249255}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 274815403}
   - {fileID: 964972071}
-  m_Father: {fileID: 526161651}
-  m_RootOrder: 0
+  m_Father: {fileID: 1620415154}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00005722, y: -0.00022888}
+  m_AnchoredPosition: {x: -11.3579445, y: -0.00013732727}
   m_SizeDelta: {x: 254.7044, y: 193.21469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888249257
@@ -2138,7 +2247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83966166, g: 0.18369527, b: 0.9056604, a: 0.78039217}
+  m_Color: {r: 0.9433962, g: 0.12014952, b: 0.5892099, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
