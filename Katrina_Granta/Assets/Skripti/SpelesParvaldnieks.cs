@@ -29,7 +29,7 @@ public class SpelesParvaldnieks : MonoBehaviour
     {
         JautajumuLogs.SetActive(false);
         RezultatuLogs.SetActive(true);
-        RezultatuTeksts.text = rezultats + "/" + jautajumuSkaits;
+        RezultatuTeksts.text ="Tu ieguvi: "+  rezultats + "/" + jautajumuSkaits;
     }
 
     public void pareizi()

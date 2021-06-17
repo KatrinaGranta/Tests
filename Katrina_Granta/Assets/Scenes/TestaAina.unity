@@ -539,12 +539,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 548634262}
-  m_Father: {fileID: 1888249256}
-  m_RootOrder: 0
+  m_Father: {fileID: 1692830478}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061034734, y: -123.999756}
+  m_AnchoredPosition: {x: -4.357956, y: -123.99988}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274815404
@@ -785,71 +785,72 @@ MonoBehaviour:
       objektu hirarhij\u0101?"
     atbildes:
     - SetActive metode
-    - 4
-    - 5
-    - 6
+    - activeInHierarchy
+    - Destoy
+    - "Visi iepriek\u0161 min\u0113tie"
     PareizaAtbilde: 1
   - Jautajums: "K\u0101 pievienot skriptu sp\u0113les objektam?"
     atbildes:
-    - 8
-    - 8
+    - "Projekta iestat\u012Bjumos jaatz\u012Bm\u0113 kur\u0161 skripts pieder kuram
+      objektam"
+    - "Ar koda pal\u012Bdz\u012Bbu savienot"
     - "Skriptu vilkt tie\u0161u uz objektu"
-    - 8
+    - "Skriptu vilkt tie\u0161u uz objektu"
     PareizaAtbilde: 3
   - Jautajums: "K\u0101 izveidot jaunu sp\u0113\u013Cu objektu?"
     atbildes:
-    - 5
-    - 6
+    - "Kreisais  peles klik\u0161\u0137is uz hirarhijas logu un izv\u0113l\u0113ties
+      \"create empty\""
+    - "Skript\u0101 jaieraksta GameObject"
     - "Labais peles klik\u0161\u0137is uz hirarhijas logu un izv\u0113l\u0113ties
       \"create empty\""
-    - 7
+    - "Ar plug in pal\u012Bdz\u012Bbu"
     PareizaAtbilde: 3
   - Jautajums: "Sp\u0113les Objekt\u0101 b\u016Bs vismaz viena transform\u0101cijas
       sast\u0101vda\u013Ca, kas nor\u0101d\u012Bs vi\u0146u atra\u0161an\u0101s vietu\u2026.."
     atbildes:
-    - 1
-    - 12
-    - 3
+    - "un izm\u0113us"
+    - ", tikai pagrie\u0161an\u0101s ainu"
+    - ", tikai m\u0113roga ainu"
     - "Pagrie\u0161anos un m\u0113roga ainu"
-    PareizaAtbilde: 3
+    PareizaAtbilde: 4
   - Jautajums: Ko izpilda kods "public static GameObject.Find(string name);"?
     atbildes:
     - "Atrod sp\u0113les objektu p\u0113c t\u0101 v\u0101rda un atgrie\u017E to"
     - "Izdz\u0113\u0161 sp\u0113les objektu"
     - "Izveido jaunu sp\u0113les objektu"
     - "Atrod sp\u0113les objektu un izdz\u0113\u0161 to"
-    PareizaAtbilde: 0
+    PareizaAtbilde: 1
   - Jautajums: "Ar k\u0101da koda pal\u012Bdz\u012Bbu ir viegl\u0101k atrast sp\u0113les
-      objekta \"b\u0113rnu\"?"
+      objekta \"b\u0113rnu\" p\u0113c t\u0101 v\u0101rda un atgriezt to?"
     atbildes:
-    - 1
+    - GetComponentsInChildren
     - GameObject.Find
-    - 2
+    - FindGameObjectWithTag
     - Transform.Find
-    PareizaAtbilde: 3
+    PareizaAtbilde: 4
   - Jautajums: "Ko p\u0101rst\u0101v sp\u0113les objekts?"
     atbildes:
     - "Rakstz\u012Bmes, rekviz\u012Btus un dekor\u0101cijas"
-    - ' audio objektus'
-    - 1
-    - 2
-    PareizaAtbilde: 0
+    - ' Audio objektus'
+    - "Skriptu tur\u0113t\u0101ju"
+    - "Rekviz\u012Btus un dekor\u0101cijas"
+    PareizaAtbilde: 1
   - Jautajums: "Kas sp\u0113les objektu pal\u012Bdz at\u0161\u0137irt no citiem sp\u0113les
       objektiem?"
     atbildes:
     - Nosaukums
     - Tagi
-    - 2
-    - 3
-    PareizaAtbilde: 1
-  - Jautajums: "K\u0101da metode \u013Cauj ieg\u016Bt atsauci uz k\u0101du noteikta
-      veida sast\u0101vda\u013Cu, kas ir pie\u0161\u0137irta sp\u0113les objektam?"
+    - Child elementa
+    - Koda
+    PareizaAtbilde: 2
+  - Jautajums: "K\u0101da metode atgrie\u017E pirmo atrasto  komponentu?"
     atbildes:
     - GetComponent metode
-    - 1
-    - 2
-    - 3
-    PareizaAtbilde: 0
+    - gameObject.GetComponent
+    - GetComponentInParent
+    - TryGetComponent
+    PareizaAtbilde: 2
   izvele:
   - {fileID: 1506019676}
   - {fileID: 179979101}
@@ -857,7 +858,7 @@ MonoBehaviour:
   - {fileID: 529498033}
   pasreizejaisJautajums: 0
   JautajumuLogs: {fileID: 1483897013}
-  RezultatuLogs: {fileID: 1888249255}
+  RezultatuLogs: {fileID: 2045663842}
   jautajumuTeksts: {fileID: 1087160656}
   RezultatuTeksts: {fileID: 964972069}
   rezultats: 0
@@ -1331,16 +1332,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964972068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1888249256}
-  m_RootOrder: 1
+  m_Father: {fileID: 1692830478}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024796, y: -0.00023651}
+  m_AnchoredPosition: {x: -4.357916, y: -0.0003890979}
   m_SizeDelta: {x: 254.70435, y: 193.21521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &998782083
@@ -1402,7 +1403,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998782083}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1758,7 +1759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1483897014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1776,7 +1777,7 @@ RectTransform:
   - {fileID: 158648442}
   - {fileID: 529498034}
   m_Father: {fileID: 1692830478}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2145,7 +2146,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 83584760}
-  - {fileID: 1888249256}
+  - {fileID: 2045663843}
   - {fileID: 1692830478}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2172,7 +2173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1692830478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2184,6 +2185,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 964972071}
+  - {fileID: 274815403}
   - {fileID: 1483897014}
   m_Father: {fileID: 1620415154}
   m_RootOrder: 2
@@ -2229,82 +2232,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692830477}
-  m_CullTransparentMesh: 0
---- !u!1 &1888249255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1888249256}
-  - component: {fileID: 1888249258}
-  - component: {fileID: 1888249257}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1888249256
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888249255}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 274815403}
-  - {fileID: 964972071}
-  m_Father: {fileID: 1620415154}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.3579445, y: -0.00013732727}
-  m_SizeDelta: {x: 254.7044, y: 193.21469}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1888249257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888249255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.12014952, b: 0.5892099, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1888249258
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888249255}
   m_CullTransparentMesh: 0
 --- !u!1 &1936504800
 GameObject:
@@ -2383,4 +2310,78 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936504800}
+  m_CullTransparentMesh: 0
+--- !u!1 &2045663842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2045663843}
+  - component: {fileID: 2045663845}
+  - component: {fileID: 2045663844}
+  m_Layer: 5
+  m_Name: RezultatuLogs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2045663843
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045663842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1620415154}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6.9998, y: -0.000022888}
+  m_SizeDelta: {x: 306.25342, y: 296.50873}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2045663844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045663842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9056604, g: 0.03844783, b: 0.8046021, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2045663845
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045663842}
   m_CullTransparentMesh: 0
